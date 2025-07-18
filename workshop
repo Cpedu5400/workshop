@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>檢驗數位化+1：動手玩Power Platform 海報</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* 調整整體背景為更活潑的淺藍色漸變 */
+            background: linear-gradient(to bottom right, #e0f7fa, #bbdefb); /* 淺藍色到更深的淺藍色漸變 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .poster-container {
+            /* 調整海報背景為白色，但增加一些微妙的紋理或漸變效果 */
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* 更明顯的陰影 */
+            overflow: hidden;
+            max-width: 800px; /* 最大寬度 */
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+            padding: 40px; /* 內部填充 */
+            box-sizing: border-box;
+            /* subtle background pattern or gradient for liveliness */
+            background-image: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.1) 50%, rgba(255,255,255,0.1) 75%, transparent 75%, transparent);
+            background-size: 20px 20px;
+        }
+        .header-gradient {
+            background: linear-gradient(to right, #6366f1, #8b5cf6); /* 紫色漸變 */
+            padding: 30px 20px;
+            color: white;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            margin: -40px -40px 0px -40px; /* 讓漸變延伸到邊緣 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title {
+            font-size: 2.8rem; /* 標題字體大小 */
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 文字陰影 */
+        }
+        .subtitle {
+            font-size: 1.8rem; /* 副標題字體大小 */
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4f46e5; /* 藍紫色 */
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .details-item {
+            font-size: 1.1rem;
+            color: #333333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .details-item svg {
+            margin-right: 10px;
+            color: #6366f1; /* 紫色圖標 */
+        }
+        .cta-button {
+            background: linear-gradient(to right, #10b981, #059669); /* 綠色漸變按鈕 */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+            margin-top: 40px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        .footer-text {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #777777;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .title {
+                font-size: 2rem;
+            }
+            .subtitle {
+                font-size: 1.4rem;
+            }
+            .section-title {
+                font-size: 1.2rem;
+            }
+            .details-item {
+                font-size: 1rem;
+            }
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 12px 25px;
+            }
+            .poster-container {
+                padding: 20px;
+            }
+            .header-gradient {
+                margin: -20px -20px 0px -20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster-container">
+        <div class="header-gradient">
+            <h1 class="title">檢驗數位化+1：動手玩M365</h1>
+            <h2 class="title">Power Platform工作坊</h1>
+        </div>
+
+        <div class="content p-8">
+            <p class="text-lg text-gray-700 mb-6">
+                深入探索 Microsoft Power Platform 的強大功能，學習如何自動化流程、分析數據並建立應用程式，提升您的數位化能力！
+            </p>
+
+            <div class="section-title">活動詳情</div>
+
+            <div class="details-item">
+                <!-- Calendar icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                日期：2025年9月11日 (星期四)
+            </div>
+            <div class="details-item">
+                <!-- Clock icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                時間：下午 1:30 - 下午 5:00
+            </div>
+            <div class="details-item">
+                <!-- Location icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                地點：563會議室
+            </div>
+
+            <!-- New details added here -->
+            <div class="details-item">
+                <!-- Users icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h2a2 2 0 002-2V7a2 2 0 00-2-2h-2V3m-2 14l-4 4m0 0l-4-4m4 4V5m3 4H9" />
+                </svg>
+                名額：兩名/組(加組長)
+            </div>
+            <div class="details-item">
+                <!-- Laptop icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1l-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                務必攜帶電腦
+            </div>
+            <div class="details-item">
+                <!-- Calendar check icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                8/25(一)以前完成報名
+            </div>
+
+            <a href="https://forms.office.com/r/pmngWag9nX" class="cta-button">立即報名參加！</a>
+
+            <p class="footer-text">
+                名額有限，請盡早報名。期待您的參與！
+            </p>
+        </div>
+    </div>
+</body>
+</html>
